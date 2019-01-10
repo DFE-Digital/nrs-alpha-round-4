@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
-RUN mkdir /home/nrsproto
-WORKDIR /home/nrsproto
+RUN mkdir /home/nrsalpharound4
+WORKDIR /home/nrsalpharound4
 COPY app ./app/
 COPY lib ./lib/
 COPY node_modules ./node_modules/
@@ -14,4 +14,4 @@ RUN apt-get update && apt-get install -y nodejs
 
 EXPOSE 3000
 
-CMD node /home/nrsproto/server.js
+CMD node /home/nrsalpharound4/server.js
