@@ -1,0 +1,75 @@
+{% extends "layout.html" %} {% block pageTitle %} GOV.UK Prototype Kit {%
+endblock %} {% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <h1 class="govuk-heading-xl">
+          Choose how to retraining into a <span id="title"></span>
+        </h1>
+      </div>
+    </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        {% for i in range(0, 3) -%}
+          {% include "includes/article.html" %}
+        {%- endfor %}
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <h1 class="govuk-heading-m">Get help to choose what's right for you</h1>
+        <ul class="govuk-list">
+          <li>
+            <p>
+              <a href="#">Book a free appointment with a careers advisor</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#">Share this page with a friend or family member</a>
+            </p>
+          </li>
+          <li>
+            <p><a href="#">Print this page</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="text/javascript">
+  // Load all content
+
+  // get data from nunjucks
+  var data = {{data | dump | safe}};
+
+  // get chosen job from localStorage
+  var index = JSON.parse(localStorage.getItem('user'));
+
+  // get and change the title
+  var title = document.getElementById('title');
+  title.innerText = data[index].name
+
+  // loop over the articles
+  let articles = document.getElementsByClassName('article')
+  Array.from(articles).map((article, i) => {
+
+    // change the title
+    let deliverytitle = article.getElementsByClassName('deliverytitle')[0]
+    deliverytitle.innerText = data[index].delivery[i].title
+
+
+    // change the description
+    let deliveryDescription = article.getElementsByClassName('deliveryDescription')[0]
+    deliveryDescription.innerText = data[index].delivery[i].description
+
+    // change the duration
+    let deliveryduration = article.getElementsByClassName('deliveryduration')[0]
+    deliveryduration.innerText = data[index].delivery[i].duration
+
+    // change the cost
+    let deliverycost = article.getElementsByClassName('deliverycost')[0]
+    deliverycost.innerText = data[index].delivery[i].cost
+
+  })
+</script>
+{% endblock %}

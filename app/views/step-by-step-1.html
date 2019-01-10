@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Step by step navigation
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-navigation.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Get help to retrain</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Get help to retrain: step by step
+    </h1>
+
+    <p>
+      Check what you need to do to retrain.
+    </p>
+
+    <div id="step-by-step-navigation" class="app-step-nav app-step-nav--large app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
+      <ol class="app-step-nav__steps">
+        <li class="app-step-nav__step js-step" id="check-youre-allowed-to-drive" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 1
+                  </span>
+                </span>
+              </span>
+
+              <span class="js-step-title">
+                Understand yourself
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-book-and-manage-your-driving-test-6">
+
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="1.1" class="app-step-nav__link js-link" href="./skills-start">Understand what you're good at</a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="1.2" class="app-step-nav__link js-link" href="./results">See jobs you could do</a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-driving-test" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="2">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 2
+                  </span>
+                </span>
+              </span>
+              <span class="js-step-title">
+                Retrain
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-book-and-manage-your-driving-test-6">
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                Complete the understand yourself step first to get recommended courses.
+              </strong>
+            </div>
+
+          </div>
+
+        </li>
+        <li class="app-step-nav__step js-step" id="book-and-manage-your-driving-test" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 3
+                  </span>
+                </span>
+              </span>
+              <span class="js-step-title">
+                Find a job
+              </span>
+            </h2>
+          </div>
+
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-book-and-manage-your-driving-test-6">
+            <ol class="app-step-nav__list " data-length="5">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.1" class="app-step-nav__link js-link" href="./results">
+                  Change your target job
+                </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.1" class="app-step-nav__link js-link" href="#">
+                  Apply for jobs
+                </a>
+              </li>
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="6.2" class="app-step-nav__link js-link" href="#">
+                  Preparing for an interview
+                </a>
+              </li>
+            </ol>
+          </div>
+
+        </li>
+
+      </ol>
+    </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function(){
+    var buttons = document.getElementsByClassName('app-step-nav__button');
+    eventFire(buttons[1], 'click');
+  }, false);
+</script>
+{% endblock %}

@@ -1,0 +1,138 @@
+{
+  "data": [
+    {
+      "name": "Plumber",
+      "anora": "a",
+      "description": "Fit and service hot and cold water systems, heating systems and drainage networks",
+      "jobCount": 300,
+      "jobLink": "https://findajob.dwp.gov.uk/search?loc=86397&q=plumber",
+      "app": true,
+      "salary": 25000,
+      "traineeSalary": 10000,
+      "hours": "35-40",
+      "lifestyle": "Monday to friday",
+      "trainingor": "Based on the results from the understand yourself questions, you need to do:",
+      "youllneed": ["good english and maths", "social and communication skills", "technical plumbing skills"],
+      "waytotrain1": "a number of skills courses before you start the job",
+      "andor": "and",
+      "waytotrain2": "a level 3 apprenticeship in plumbing and domestic heating, learning while you work",
+      "courses": ["english level 2", "maths level 2", "communication level 3"],
+      "coursedetail": "This could take 4 months to complete part-time. It would be fully funded by the government",
+      "coulddothis": "You also need to do a level 3 apprenticeship in plumbing and domestic heating. You would:",
+      "coulddothisdetails": [
+        "be working as a trainee in an organisation while learning the technical skills",
+        "have a reduced salary while you work",
+        "can take up to 4 years"
+      ],
+      "whatyoulllearn": [
+        "the ability to use, repair and maintain machines and tools",
+        "knowledge of building and construction",
+        "to be thorough and pay attention to detail",
+        "knowledge of maths",
+        "to work well with others",
+        "to use your initiative",
+        "to work well with your hands"
+      ],
+      "whatyoulldo": [
+        "measuring and planning to give cost and time estimates",
+        "cutting, bending and joining pipes and fittings",
+        "installing water, drainage and heating systems",
+        "finding and fixing faults",
+        "servicing gas and oil-fired central heating systems and radiators",
+        "installing and fixing domestic appliances like showers and washing machines",
+        "dealing with emergency call-outs like boiler breakdowns or blocked drains",
+        "fitting weather-proof materials, joints and flashings to roofs, chimneys and walls"
+      ]
+    },
+    {
+      "name": "Healthcare assistant",
+      "anora": "a",
+      "description": "Provide high-quality and compassionate health and social care for a wide range of people",
+      "jobCount": 50,
+      "jobLink": "https://findajob.dwp.gov.uk/search?loc=86397&q=plumber",
+      "app": true,
+      "salary": 17500,
+      "traineeSalary": 10000,
+      "hours": "35-40",
+      "lifestyle": "Monday to friday",
+      "trainingor": "Based on the results from the understand yourself questions there are two different ways you can train, you need to do:",
+      "youllneed": ["good english and maths", "social and communication skills", "technical healthcare skills"],
+      "waytotrain1": "a number of skills courses before you start the job",
+      "andor": "or",
+      "waytotrain2": "a level 5 apprenticeship, learning while you work",
+      "courses": ["english level 2", "maths level 2", "communication level 3", "a health and social care college course"],
+      "coursedetail": "This could take 4 months to complete part-time. It would be partly funded by the government and would cost you £250",
+      "coulddothis": "You could enroll in a level 5 healthcare assistant practitioner apprenticeship. You would:",
+      "coulddothisdetails": [
+        "be working as a trainee in an organisation while learning the technical skills",
+        "have a reduced salary while you work",
+        "take around 18 months to do this"
+      ],
+      "whatyoulllearn": [
+        "patience and the ability to remain calm in stressful situations",
+        "sensitivity and understanding",
+        "to be thorough and pay attention to detail",
+        "the ability to work well with others",
+        "the ability to accept criticism and work well under pressure",
+        "the ability to work well with your hands",
+        "excellent verbal communication skills",
+        "customer service skills"
+      ],
+      "whatyoulldo": [
+        "helping patients shower and get dressed",
+        "helping people eat",
+        "making beds",
+        "using equipment to lift and move patients",
+        "talking to patients and reassuring them",
+        "helping patients to the toilet",
+        "tidying the ward or patients’ homes",
+        "taking patients' temperature or pulse",
+        "attending meetings with other healthcare professionals"
+      ]
+    },
+    {
+      "name": "Office administrator",
+      "anora": "an",
+      "description": "Give support to offices by organising meetings, typing documents and updating computer records",
+      "jobCount": 210,
+      "jobLink": "https://findajob.dwp.gov.uk/search?loc=86397&q=plumber",
+      "app": true,
+      "salary": 22000,
+      "traineeSalary": 10000,
+      "hours": "35-40",
+      "lifestyle": "Monday to friday",
+      "trainingor": "Based on the results from the understand yourself questions, you need to do:",
+      "youllneed": ["good english and maths", "social and communication skills", "IT skills"],
+      "waytotrain1": "a number of skills courses before you start the job",
+      "andor": "and",
+      "waytotrain2": "a level 3 apprenticeship, learning while you work",
+      "courses": ["english level 2", "maths level 2", "communication level 3", "a business administration college course"],
+      "coursedetail": "This could take 4 months to complete part-time. It would be partly funded by the government and would cost you £250",
+      "coulddothis": "You could enroll in a level 3 business administrator apprenticeship. You would:",
+      "coulddothisdetails": [
+        "work as a trainee in a business while learning the technical skills",
+        "can take around 18 months"
+      ],
+      "whatyoulllearn": [
+        "administration skills",
+        "to be thorough and pay attention to detail",
+        "the ability to work well with others",
+        "the ability to work on your own",
+        "sensitivity and understanding",
+        "to be flexible and open to change",
+        "excellent verbal communication skills",
+        "customer service skills"
+      ],
+      "whatyoulldo": [
+        "dealing with queries on the phone, by email and social media",
+        "greeting visitors at reception",
+        "typing letters and reports",
+        "updating computer records",
+        "printing and photocopying",
+        "ordering supplies",
+        "setting up meetings and taking notes during them",
+        "making travel arrangements for staff"
+      ]
+    }
+  ]
+}
