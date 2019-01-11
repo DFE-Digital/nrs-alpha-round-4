@@ -5,6 +5,9 @@ const jobs = require('./data/jobs.json')
 const courses = require('./data/courses.json')
 
 // Add your routes here - above the module.exports line
+router.get('/', function (req, res) {
+  res.render('vignette-0')
+})
 router.get('/results', function (req, res) {
   res.render('results', jobs)
 })
