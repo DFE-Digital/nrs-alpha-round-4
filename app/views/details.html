@@ -45,9 +45,21 @@ endblock %} {% block content %}
           <ul id="coulddothisdetails" class="govuk-list govuk-list--bullet">
 
           </ul>
-          <a href="./step-by-step-2" role="button" draggable="false" class="govuk-button govuk-!-margin-bottom-9">
-            See different ways to do this training
-          </a>
+          <h4 class="govuk-heading-s">Salary</h4>
+          <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-3" />
+
+          <ul class="govuk-list">
+            <li>
+              Trainee £<span class="traineeSalary">
+                {# content in jobs.json #}
+              </span>
+            </li>
+            <li>
+              After 1 year £<span class="salary">
+                {# content in jobs.json #}
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="govuk-grid-row" style="margin-top: 20px;">
@@ -71,25 +83,12 @@ endblock %} {% block content %}
     </div>
     <div class="govuk-grid-column-one-third">
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-quarter govuk-!-margin-top-9 govuk-!-margin-bottom-6">
-          <span style="width:55px; height: 55px; background-color:red;background:url('./public/images/pound.svg'); background-position: center; background-size:cover; display: flex;"></span>
-        </div>
-        <div class="govuk-grid-column-three-quarters">
-          <h4 class="govuk-heading-s">Salary</h4>
-          <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-3" />
+        <div class="govuk-grid-column-full">
+          <h4 class="govuk-heading-s">Create an account to see your steps to becoming <span id="anora">a</span> <span style="text-transform:lowercase;" class="title">town planning assistant</span> </h4>
+          <a href="./signin" role="button" draggable="false" class="govuk-button govuk-!-margin-bottom-9">
+            Create an account
+          </a>
 
-          <ul class="govuk-list">
-            <li>
-              Trainee £<span class="traineeSalary">
-                {# content in jobs.json #}
-              </span>
-            </li>
-            <li>
-              After 1 year £<span class="salary">
-                {# content in jobs.json #}
-              </span>
-            </li>
-          </ul>
         </div>
       </div>
       <!-- <div class="govuk-grid-row">

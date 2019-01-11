@@ -116,13 +116,13 @@ Step by step navigation
           </div>
 
           <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-book-and-manage-your-driving-test-6">
-            <ol class="app-step-nav__list " data-length="5">
-              <li class="app-step-nav__list-item js-list-item ">
-                <a data-position="6.1" class="app-step-nav__link js-link" href="#">
-                  Find a job
-                </a>
-              </li>
-            </ol>
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                You need to study communication level 3 before you can apply for <span style="text-transform:lowercase;" class="title"></span> jobs
+              </strong>
+            </div>
           </div>
         </li>
 
@@ -147,26 +147,11 @@ Step by step navigation
         </p>
       </li>
     </ul>
-    <hr class="govuk-section-break govuk-section-break--ml govuk-section-break--visible govuk-!-margin-bottom-6">
-
-    <h1 class="govuk-heading-s">Send yourself a copy of this page</h1>
-    <div class="govuk-form-group">
-      <label class="govuk-label" for="email">
-        Email address
-      </label>
-      <span id="email-hint" class="govuk-hint">
-        We’ll only use this to send you these results
-      </span>
-      <input class="govuk-input" id="email" name="email" type="email" aria-describedby="email-hint">
-      <a href="./end" role="button" draggable="false" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8">
-        Send
-      </a>
-    </div>
   </div>
 </div>
 <script type="text/javascript">
   // get data from nunjucks
-  var data = {{data | dump | safe}};
+  var data = {{ data | dump | safe }};
 
   // get chosen job from localStorage
   var index = JSON.parse(localStorage.getItem('user'));
