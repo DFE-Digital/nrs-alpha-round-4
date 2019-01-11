@@ -254,13 +254,13 @@
 
         <div style="height: 100%; display: flex; flex-direction: column; justify-content:center">
           <div>
-          <h1>Functional Skills Maths for Adults</h1>
+          <h1 class="title">Functional Skills Maths for Adults</h1>
 
 
 
           <a href="./application" class="button higher-ed">Apply Now </a>
 
-          <a href="#" class="button text-only higher-ed">Enquire Now</a>
+          <a href="./application" class="button text-only higher-ed">Enquire Now</a>
 
 
         </div>
@@ -284,7 +284,7 @@
       <section class="content-page rich-text">
         <div class="row page-content-header">
           <div class="span8">
-            <h2>Functional Skills Maths for Adults</h2>
+            <h2 class="title">Functional Skills Maths for Adults</h2>
           </div>
           <div class="span8">
             <p>Functional Skills Maths can be studied part-time over 1 year. Classes take place at various sites with different start dates through the year. Classes are available during the day and in the evening and are 2.5 hours long, based in a
@@ -354,6 +354,28 @@
 	<script type="text/javascript" >$(function() { if (window.PIE) { $('.page-intro').each(function() { PIE.attach(this); }); $('.rounded').each(function() { PIE.attach(this); }); $('.circles .circle').each(function() { PIE.attach(this); });}});</script>
 <![endif]-->
 
+<script type="text/javascript">
+
+
+  // get data from nunjucks
+  var data = {{ courses | dump | safe }};
+
+  // get chosen job from localStorage
+  var index = JSON.parse(localStorage.getItem('course'));
+
+  let college = document.getElementById('college');
+  let titles = document.getElementsByClassName('title');
+  let distance = document.getElementById('distance');
+
+  Array.from(titles).map(title => {
+    title.innerText = data[index].name
+  })
+
+  distance.innerText = data[index].distance
+  college.innerText = data[index].college
+
+
+</script>
 </body>
 
 </html>

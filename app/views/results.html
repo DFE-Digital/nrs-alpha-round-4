@@ -65,7 +65,7 @@
 
           <article class="govuk-!-margin-bottom-9">
             <h2  class="govuk-heading-l">
-              <a onclick="save({{loop.index}})" href="./details">{{- job.name | safe }}</a>
+              <a onclick="save({{loop.index}}, 'user')" href="./details">{{- job.name | safe }}</a>
             </h2>
             <p class="govuk-body">{{- job.description | safe }}</p>
             <ul class="govuk-list">

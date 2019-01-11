@@ -56,23 +56,23 @@ GOV.UK Prototype Kit
       </div>
       <div class="govuk-grid-column-three-quarters">
 
+        {% for course in courses %}
 
         <article class="govuk-!-margin-bottom-9">
-          <h2 class="govuk-heading-l">
-            <a href="./course-detail">Course name</a>
+          <h2  class="govuk-heading-l">
+            <a onclick="save({{loop.index}}, 'course')" href="./course-detail">{{- course.name | safe }}</a>
           </h2>
-          <p class="govuk-body">Course description</p>
-          <p class="govuk-body">Course available for either</p>
+          <p class="govuk-body">{{- course.description | safe }}</p>
           <ul class="govuk-list">
-            <li>Full time (40 hours a week over 2 weeks)
-            </li>
-            <li>Part time (3 hours a week over 12 weeks)
+            <li>{{- course.distance | safe }}&nbsp;from your location
             </li>
             <li>
-              Cost: £600
+              {{- course.price | safe }}
             </li>
           </ul>
         </article>
+
+        {%- endfor %}
 
         <a href="#" class="govuk-link">View more courses</a>
 

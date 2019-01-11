@@ -10,10 +10,10 @@ $(document).ready(function() {
 
 })
 
-function save(index) {
-  localStorage.clear();
-  localStorage.removeItem('user');
-  localStorage.setItem('user', JSON.stringify(index - 1));
+function save(index, page) {
+  // localStorage.clear();
+  localStorage.removeItem(page);
+  localStorage.setItem(page, JSON.stringify(index - 1));
 }
 
 function eventFire(el, etype) {

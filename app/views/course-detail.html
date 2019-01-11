@@ -6,13 +6,14 @@ endblock %} {% block content %}
       <a href="../course-results" class="govuk-back-link">Back to results</a>
     </div>
   </div>
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <h1 class="govuk-heading-xl govuk-!-margin-bottom-3 govuk-!-margin-top-6">
-        Communication level 3
+      <h1 id="title" class="govuk-heading-xl govuk-!-margin-bottom-3 govuk-!-margin-top-6">
+        {{- courses[0].name | safe }}
       </h1>
-      <span class="govuk-caption-xl govuk-!-margin-bottom-9">Working across a variety of organisations focusing on ensuring
-        excellent customer experience
+      <span class="govuk-caption-xl govuk-!-margin-bottom-9">
+        {{- courses[0].description | safe }}
       </span>
     </div>
   </div>
@@ -21,8 +22,48 @@ endblock %} {% block content %}
     <div class="govuk-grid-column-two-thirds">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
-          <h2 class="govuk-heading-m">What you need to do</h2>
+          <table class="govuk-table">
 
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Qualification</th>
+                <td class="govuk-table__cell">{{- courses[0].level | safe }}</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Taught by</th>
+                <td class="govuk-table__cell">
+                  <span id="college">{{- courses[0].college | safe }}</span><br>
+                  (<span id="distance">{{- courses[0].distance | safe }}</span> from your location)
+                </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Course types</th>
+                <td class="govuk-table__cell">
+                  <ul class="govuk-list">
+                    <li>Online in your own time</li>
+                    <li>Part-time (online and some classroom)</li>
+                    <li>Full-time  (mostly classroom)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Course cost</th>
+                <td class="govuk-table__cell">
+                  <ul class="govuk-list">
+                    <li>Online: £50</li>
+                    <li>Part-time: £100</li>
+                    <li>Full-time: £250</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Course start date</th>
+                <td class="govuk-table__cell">
+                  Depending on course type
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -43,5 +84,23 @@ endblock %} {% block content %}
     </div>
   </div>
 </main>
+<script type="text/javascript">
 
+
+    // get data from nunjucks
+    var data = {{ courses | dump | safe }};
+
+    // get chosen job from localStorage
+    var index = JSON.parse(localStorage.getItem('course'));
+
+  let college = document.getElementById('college');
+  let title = document.getElementById('title');
+  let distance = document.getElementById('distance');
+
+  title.innerText = data[index].name
+  distance.innerText = data[index].distance
+  college.innerText = data[index].college
+
+
+</script>
 {% endblock %}
