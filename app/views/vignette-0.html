@@ -5,15 +5,31 @@
     font-size:19px;
     font-family: sans-serif;
   }
+
+  .button{
+    background-color: blue; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .vignette{
+    background:white; padding:2em; border: 4px solid blue; border-radius:5px; max-width:550px; text-align: center; margin: 0 auto;
+  }
 </style>
 <div style="position: fixed; height: 100vh; width: 100vw; display: flex; justify-content: center; flex-direction: column;">
-  <div style="max-width:550px; text-align: center; margin: 0 auto;">
+  <div class="vignette">
     <h1>This is a prototype</h1>
     <p style=" font-size:24px; ">
       When you see a screen that looks like this, it means you need to imagine an activity takes place.
     </p>
     <p> There will be more details to let you know what to do each time.</p>
-    <a href="./index">Continue</a>
+    <a class="button" href="./index">Start prototype</a>
 
   </div>
 </div>
