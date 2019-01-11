@@ -22,8 +22,9 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h1 class="govuk-heading-xl">Retrain to do these jobs</h1>
-          <p>These jobs are recommended to you based on the results of the understand yourself questions. If you like, you can
-            <a href="./skills-start">retake the understand yourself quiz</a>.</p>
+          <p>
+            These jobs are recommended to you based on the results of the understand yourself questions.
+          </p>
         </div>
       </div>
       <div class="govuk-grid-row govuk-!-margin-top-6">
@@ -68,9 +69,9 @@
               <a onclick="save({{loop.index}}, 'user')" href="./details">{{- job.name | safe }}</a>
             </h2>
             <p class="govuk-body">{{- job.description | safe }}</p>
-            <ul class="govuk-list">
-              <li>{{- job.jobCount | safe }}&nbsp;jobs near you
-              </li>
+            <ul class="govuk-list govuk-list--bullet">
+              <!-- <li>{{- job.jobCount | safe }}&nbsp;jobs near you
+              </li> -->
               <li>
                 average salary is &pound;{{- job.salary | safe }}
               </li>
