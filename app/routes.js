@@ -3,6 +3,7 @@ const router = express.Router()
 
 const jobs = require('./data/jobs.json')
 const courses = require('./data/courses.json')
+const questions = require('./data/questions.json')
 
 // Add your routes here - above the module.exports line
 router.get('/', function (req, res) {
@@ -14,6 +15,9 @@ router.get('/results', function (req, res) {
 
 router.get('/details', function (req, res) {
   res.render('details', jobs)
+})
+router.get('/details-2', function (req, res) {
+  res.render('details-2', jobs)
 })
 router.get('/step-by-step-2', function (req, res) {
   res.render('step-by-step-2', jobs)
@@ -29,6 +33,9 @@ router.get('/course-detail', function (req, res) {
 })
 router.get('/provider', function (req, res) {
   res.render('provider', courses)
+})
+router.get('/questions', function (req, res) {
+  res.render('questions', questions)
 })
 
 module.exports = router
