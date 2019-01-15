@@ -56,7 +56,7 @@ Step by step navigation
               </span>
 
               <span class="js-step-title">
-                Understand yourself
+                Check your skills and experience
               </span>
             </h2>
           </div>
@@ -65,7 +65,9 @@ Step by step navigation
 
             <ol class="app-step-nav__list " data-length="3">
               <li class="app-step-nav__list-item js-list-item ">
-                <a data-position="1.1" class="app-step-nav__link js-link" href="./skills-start">Understand what you're good at</a>
+                <a data-position="1.1" class="app-step-nav__link js-link" href="./skills-start">
+                  Find out what you're good at and see jobs you could retrain to do
+                </a>
               </li>
             </ol>
           </div>
@@ -132,6 +134,7 @@ Step by step navigation
 
   </div>
   <div class="govuk-grid-column-one-third">
+    <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
     <h1 class="govuk-heading-m">Get help to choose what's right for you</h1>
     <ul class="govuk-list">
       <li>
@@ -143,6 +146,11 @@ Step by step navigation
 
 </div>
 </div>
+<style media="screen">
+  .app-step-nav__toggle-link, .app-step-nav__button--controls{
+    display:none;
+  }
+</style>
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
     var buttons = document.getElementsByClassName('app-step-nav__button');

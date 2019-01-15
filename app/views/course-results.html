@@ -16,13 +16,9 @@ GOV.UK Prototype Kit
   </div>
 
   <main id="main" class="govuk-main-wrapper" role="main">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Communication level 3 courses near you</h1>
-      </div>
-    </div>
+
     <div class="govuk-grid-row govuk-!-margin-top-6">
-      <div class="govuk-grid-column-one-quarter govuk-!-margin-bottom-9">
+      <!-- <div class="govuk-grid-column-one-quarter govuk-!-margin-bottom-9">
         <h1 class="govuk-heading-m">Sort by</h1>
         <fieldset class="govuk-fieldset">
           <div class="govuk-radios">
@@ -53,8 +49,9 @@ GOV.UK Prototype Kit
 
           </div>
         </fieldset>
-      </div>
-      <div class="govuk-grid-column-three-quarters">
+      </div> -->
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Communication level 3 courses near you</h1>
 
         {% for course in courses %}
 
@@ -76,7 +73,19 @@ GOV.UK Prototype Kit
 
         {%- endfor %}
 
-        <a href="#" class="govuk-link">View more courses</a>
+        <!-- <a href="#" class="govuk-link">View more courses</a> -->
+
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
+        <h2 class="govuk-heading-m">Get help to choose what's right for you</h2>
+        <ul class="govuk-list">
+          <li>
+            <p>
+              <a href="./vignette-career">Speak to a careers adviser</a>
+            </p>
+          </li>
+        </ul>
 
       </div>
     </div>
