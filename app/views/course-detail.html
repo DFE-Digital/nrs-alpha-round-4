@@ -70,8 +70,14 @@ endblock %} {% block content %}
     <div class="govuk-grid-column-one-third govuk-!-margin-bottom-9">
 
           <h3 class="govuk-heading-m">Apply for this course</h3>
-          <p>This course requires you to apply through the college's website.</p>
-          <a role="button" draggable="false" class="govuk-button govuk-!-margin-bottom-4" href="./provider">Apply now</a>
+          <div style="margin-bottom:0;" class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <p class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+This course requires you to apply through the college's website.
+</p>
+</div>
+          <a role="button" draggable="false" class="govuk-button govuk-!-margin-bottom-4" href="./provider">Apply through the college</a>
           <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
           <h2 class="govuk-heading-m">Get more advice and guidance</h2>
           <ul class="govuk-list">
