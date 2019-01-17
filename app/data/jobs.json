@@ -1,50 +1,6 @@
 {
   "data": [
     {
-      "name": "Plumber",
-      "anora": "a",
-      "description": "Fit and service hot and cold water systems, heating systems and drainage networks",
-      "jobCount": 300,
-      "jobLink": "https://findajob.dwp.gov.uk/search?loc=86397&q=plumber",
-      "app": true,
-      "salary": "25,000",
-      "traineeSalary": "10,000",
-      "hours": "35-40",
-      "lifestyle": "Monday to friday",
-      "trainingor": "Based on the results from the understand yourself questions, you need to do:",
-      "youllneed": ["good english and maths", "social and communication skills", "technical plumbing skills"],
-      "waytotrain1": "a number of skills courses before you start the job",
-      "andor": "and",
-      "waytotrain2": "a level 3 apprenticeship in plumbing and domestic heating, learning while you work",
-      "courses": ["communication level 3", "english level 2", "maths level 2"],
-      "coursedetail": "This could take 4 months to complete part-time. It would be fully funded by the government",
-      "coulddothis": "You also need to do a level 3 apprenticeship in plumbing and domestic heating. You would:",
-      "coulddothisdetails": [
-        "be working as a trainee in an organisation while learning the technical skills",
-        "have a reduced salary while you work",
-        "can take up to 4 years"
-      ],
-      "whatyoulllearn": [
-        "the ability to use, repair and maintain machines and tools",
-        "knowledge of building and construction",
-        "to be thorough and pay attention to detail",
-        "knowledge of maths",
-        "to work well with others",
-        "to use your initiative",
-        "to work well with your hands"
-      ],
-      "whatyoulldo": [
-        "measuring and planning to give cost and time estimates",
-        "cutting, bending and joining pipes and fittings",
-        "installing water, drainage and heating systems",
-        "finding and fixing faults",
-        "servicing gas and oil-fired central heating systems and radiators",
-        "installing and fixing domestic appliances like showers and washing machines",
-        "dealing with emergency call-outs like boiler breakdowns or blocked drains",
-        "fitting weather-proof materials, joints and flashings to roofs, chimneys and walls"
-      ]
-    },
-    {
       "name": "Healthcare assistant",
       "anora": "a",
       "description": "Provide high-quality and compassionate health and social care for a wide range of people",
@@ -88,6 +44,50 @@
         "tidying the ward or patients’ homes",
         "taking patients' temperature or pulse",
         "attending meetings with other healthcare professionals"
+      ]
+    },
+    {
+      "name": "Plumber",
+      "anora": "a",
+      "description": "Fit and service hot and cold water systems, heating systems and drainage networks",
+      "jobCount": 300,
+      "jobLink": "https://findajob.dwp.gov.uk/search?loc=86397&q=plumber",
+      "app": true,
+      "salary": "25,000",
+      "traineeSalary": "10,000",
+      "hours": "35-40",
+      "lifestyle": "Monday to friday",
+      "trainingor": "Based on the results from the understand yourself questions, you need to do:",
+      "youllneed": ["good english and maths", "social and communication skills", "technical plumbing skills"],
+      "waytotrain1": "a number of skills courses before you start the job",
+      "andor": "and",
+      "waytotrain2": "a level 3 apprenticeship in plumbing and domestic heating, learning while you work",
+      "courses": ["communication level 3", "english level 2", "maths level 2"],
+      "coursedetail": "This could take 4 months to complete part-time. It would be fully funded by the government",
+      "coulddothis": "You also need to do a level 3 apprenticeship in plumbing and domestic heating. You would:",
+      "coulddothisdetails": [
+        "be working as a trainee in an organisation while learning the technical skills",
+        "have a reduced salary while you work",
+        "can take up to 4 years"
+      ],
+      "whatyoulllearn": [
+        "the ability to use, repair and maintain machines and tools",
+        "knowledge of building and construction",
+        "to be thorough and pay attention to detail",
+        "knowledge of maths",
+        "to work well with others",
+        "to use your initiative",
+        "to work well with your hands"
+      ],
+      "whatyoulldo": [
+        "measuring and planning to give cost and time estimates",
+        "cutting, bending and joining pipes and fittings",
+        "installing water, drainage and heating systems",
+        "finding and fixing faults",
+        "servicing gas and oil-fired central heating systems and radiators",
+        "installing and fixing domestic appliances like showers and washing machines",
+        "dealing with emergency call-outs like boiler breakdowns or blocked drains",
+        "fitting weather-proof materials, joints and flashings to roofs, chimneys and walls"
       ]
     },
     {
