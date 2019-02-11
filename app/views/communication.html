@@ -13,10 +13,10 @@ endblock %} {% block content %}
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
           <h1 class="govuk-heading-xl govuk-!-margin-bottom-6 govuk-!-margin-top-6">
-            Find a communications level 3 course
+            Find a communications course
           </h1>
           <p class="govuk-body">
-            Effective communication is central to many roles. This course will help you understand:
+            To be a <span class="title" style="text-transform: lowercase;"></span> you also need good communication skills.  This course will help you understand:
           </p>
           <ul class="govuk-list govuk-list--bullet">
             <li>effective communication</li>
@@ -25,7 +25,7 @@ endblock %} {% block content %}
             <li>ways to overcome these barriers</li>
           </ul>
           <p class="govuk-body">
-            The course will give you the opportunity to develop the interpersonal skills you need to embark on a new career.
+            The course will give you the opportunity to develop the interpersonal skills you need to embark on a new career as a <span class="title" style="text-transform: lowercase;"></span>.
           </p>
           <a href="./course-results" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
             Start now
@@ -59,4 +59,18 @@ endblock %} {% block content %}
       <a href="../step-by-step-2" class="govuk-back-link">Back to results</a>
     </div>
 </main>
+
+<script type="text/javascript">
+  // get data from nunjucks
+  var data = {{ data | dump | safe }};
+
+  // get chosen job from localStorage
+  var index = JSON.parse(localStorage.getItem('user'));
+
+  var titles = document.getElementsByClassName('title');
+  Array.from(titles).map(title => {
+    title.innerText = data[index].name
+  })
+
+</script>
 {% endblock %}

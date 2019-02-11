@@ -23,7 +23,6 @@
 {% from "tag/macro.njk"           import govukTag %}
 {% from "textarea/macro.njk"      import govukTextarea %}
 {% from "warning-text/macro.njk"  import govukWarningText %}
-
 {% block head %}
   {% include "includes/head.html" %}
 {% endblock %}
@@ -41,8 +40,15 @@
     serviceUrl: "/",
     containerClasses: "govuk-width-container"
   }) }}
+<div class="govuk-width-container">
+  {{ govukPhaseBanner({
+    tag: {
+      text: "alpha"
+    },
+    html: 'This is a new service – your feedback will help us to improve it.'
+  }) }}
+</div>
 {% endblock %}
-
 {% if useAutoStoreData %}
   {% block footer %}
     {{ govukFooter({
@@ -61,6 +67,7 @@
     }) }}
   {% endblock %}
 {% endif %}
+
 
 {% block bodyEnd %}
   {% block scripts %}
